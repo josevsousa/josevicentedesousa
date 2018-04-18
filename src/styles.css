@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+.center{text-align: center}
+.subTitulo{
+    /* background: #efeeee; */
+    padding: 5px;
+    color: #5d5d5d;
+}
+.subTitulo2 {
+    background: #878d94;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h4.subTitulo i {
+    padding: 5px;
+    color: #cacaca;
+}
+

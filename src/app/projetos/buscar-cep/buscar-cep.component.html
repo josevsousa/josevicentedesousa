@@ -1,0 +1,53 @@
+<h5 class="subTitulo2">Consulta por cep</h5>
+  
+<div class="container">
+  <br>    
+  <div class="text-center">
+    <p class="card-text">Busca por cep/endereço com JavaScript puro no Angular.</p>
+
+    <!-- <form [formGroup]="formulario" (ngSubmit)="ngSubmit()" >
+      <div class="form-group">
+        <input type="text" class="form-control-lg" id="cep" (keyup)="keyUpInput()"  placeholder="Cep" formControlName="cep">
+        <small class="form-text text-muted">Digite o cep para encontrar o endereço.</small>
+      </div>
+      <div class="form-group">
+          <input type="text" class="form-control-lg" id="end" (keyup)="keyUpInput()" placeholder="Endereço" formControlName="end">
+          <small class="form-text text-muted">Digite o endereço para encontrar o cep.</small>
+        </div>
+      <button type="submit" [disabled]="btConsultar" class="btn  btn-primary">Consultar</button>
+    </form>   -->
+
+
+
+    <form >
+        <div class="form-group">
+          <input type="text" class="form-control-lg" id="cep" (keyup)="keyUpInputCep()"  placeholder="Cep" >
+          <small class="form-text text-muted">Digite o cep para encontrar o endereço.</small>
+          <div class="alert alert-warning" role="alert" *ngIf="alertErroCep">
+              O <a class="alert-link">CEP</a> não foi encontrado.
+          </div>
+        </div>
+
+        <button class="btn  btn-primary" [disabled]="btConsultar" (click)="ngSubmit()">Consultar</button>
+        <button class="btn btn-danger" (click)="limparForm()" *ngIf="alertErroCep">limpar</button>
+      </form>  
+  </div>  
+  <br>
+  <div class="alert alert-success" role="alert" *ngIf="address_status">
+    <h4 class="alert-heading">Endereço.</h4>
+      <address >
+        {{address.logradouro}}, {{address.bairro}}<br>
+        {{address.localidade}} {{address.uf}}, CEP {{address.cep}}<br>
+      </address>
+    <hr>
+    <p class="mb-0">Form, JavaScript, API Rest.</p>
+  </div>
+  
+  
+    <!-- <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.0110421337904!2d-46.75282524994353!3d-23.496111764994918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cefecba6ac9489%3A0x84e2a6473549b312!2sR.+H%C3%A9lio+Rodrigues+Ferreira+-+Jardim+Santo+Elias%2C+S%C3%A3o+Paulo+-+SP!5e0!3m2!1spt-BR!2sbr!4v1518082227913" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div> -->
+  <br>
+  <br>
+</div>
+  
