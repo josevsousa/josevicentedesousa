@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark gradColor">
-  <a class="navbar-brand" href="#">José Vicente de Sousa</a>
+  <!-- <a class="navbar-brand" href="#">José Vicente de Sousa</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -14,5 +14,26 @@
     </ul>
 
     
-  </div>
+  </div> -->
+  <button class="navbar-toggler" id="bt_hamburger" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" routerLink="inicio">José Vicente de Sousa</a>
+  
+    <div class="collapse navbar-collapse"  id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="inicio">Inicio</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="sobre">Sobre</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="projetos">Projetos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" routerLink="contato">Contato</a>
+        </li>
+      </ul>
+    </div>
 </nav>

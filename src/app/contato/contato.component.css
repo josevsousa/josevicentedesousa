@@ -21,3 +21,8 @@ ul#UlFormContato {
 .enviado img {
     height: 90px;
 }
+
+a img {
+    margin: 9px 8px 2px 0;
+    width: 30px;
+}

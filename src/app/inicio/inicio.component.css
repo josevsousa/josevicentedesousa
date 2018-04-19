@@ -13,22 +13,50 @@ ul#social li{
     list-style: none;
     display: initial;
 }
-ul#social li img{
+ol {
+    margin-top: 18px;
+}
+img.python {
+    width: 99px;
+    margin-left: 9px;
+}
+
+/* ul#social li img{
     width: 70px;
     border-radius: 50%;
     border: 5px solid #dde0e5;
-}
+} */
 
-.profissao ul{ padding: 0;}
+/* .profissao ul{ padding: 0;}
 .profissao ul li {
     list-style: none;
     display: inline-flex;
     margin-bottom: 9px;
-}
+} */
 
 i.material-icons {
     font-size: 5em;
-    color: #ced2ce;
+    color: #ececec;
 }
+
+.card{
+    border: none;
+}
+
+h5.text-center {
+    font-size: xx-large;
+    color: #a2a2a2;
+}
+ol {
+    font-size: smaller;
+}
+ul#social {
+    margin-bottom: 51px;
+}
+h4.center {
+    font-size: xx-large;
+    color: #717171;
+}
+
 
  
