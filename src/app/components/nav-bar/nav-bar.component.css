@@ -2,6 +2,10 @@
     border:none;
     outline: none;
 }
+.nav-link, .nav-item.active{
+    outline: none !important;
+}
+
 .breadcrumb{
     margin-bottom: 0 !important;
 }

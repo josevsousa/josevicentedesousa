@@ -1,4 +1,4 @@
-import { ServiceWorkerModule } from '@angular/service-worker';
+// import { ServiceWorkerModule } from '@angular/service-worker';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -34,8 +34,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     HttpModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    ReactiveFormsModule
+    // ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [ContatoService],
   bootstrap: [AppComponent]
