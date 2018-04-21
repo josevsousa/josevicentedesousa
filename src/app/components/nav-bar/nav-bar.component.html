@@ -34,6 +34,18 @@
         <li class="nav-item" routerLinkActive="active">
           <a class="nav-link" routerLink="contato">Contato</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" (click)="openModal(template)">Login {{message}}</a>
+        </li> -->
       </ul>
+
+      <a class="nav-link login" (click)="openModal(template)"><i class="material-icons">vpn_key</i></a> 
     </div>
+   
 </nav>
+<ng-template #template>
+  <div class="modal-body text-center">
+    <p>Do you want to confirm?</p>
+    <button type="button" class="btn btn-default" (click)="confirm()" >Yes</button>
+    <button type="button" class="btn btn-primary" (click)="decline()" >No</button>
+  </div>

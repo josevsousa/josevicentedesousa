@@ -19,3 +19,12 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#097aff', endColorstr='#6db1ff',GradientType=1 ); /* IE6-9 */
 }
 
+a.nav-link.login {
+    color: #acd4ff !important;
+    padding: 0;
+    cursor: pointer;
+}
+
+a.login i.material-icons {
+    font-size: xx-large;
+}
