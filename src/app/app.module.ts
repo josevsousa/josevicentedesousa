@@ -26,6 +26,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { ProjetosModule } from './projetos/projetos.module';
 import { SharedModule } from "./shared/shared.module";
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { NotFoundComponent } from './notFound/not-found.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     SobreComponent,
     CursosComponent,
     ContatoComponent,
-    NavBarComponent
+    NavBarComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     FormsModule,
     ReactiveFormsModule,
     ModalModule.forRoot(),
-    ButtonsModule.forRoot()
+    ButtonsModule.forRoot(),
     // AngularFireAuthModule,
     // AngularFireModule.initializeApp(environment.firebaseConfig),
     // ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
