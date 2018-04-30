@@ -7,8 +7,9 @@ import { AuthService } from "./services/auth.service";
 
 
 import { environment } from '../environments/environment';
-// import { AngularFireModule } from "angularfire2";
-// import { AngularFireAuthModule } from "angularfire2/auth";
+import { AngularFireModule } from "angularfire2";
+import { AngularFirestoreModule } from "angularfire2/firestore";
+import { AngularFireAuthModule } from "angularfire2/auth";
 
 // bootstrap
 import { ModalModule } from "ngx-bootstrap/modal";
@@ -27,6 +28,7 @@ import { ProjetosModule } from './projetos/projetos.module';
 import { SharedModule } from "./shared/shared.module";
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { NotFoundComponent } from './notFound/not-found.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { NotFoundComponent } from './notFound/not-found.component';
     CursosComponent,
     ContatoComponent,
     NavBarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -48,8 +51,9 @@ import { NotFoundComponent } from './notFound/not-found.component';
     ReactiveFormsModule,
     ModalModule.forRoot(),
     ButtonsModule.forRoot(),
-    // AngularFireAuthModule,
-    // AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule
     // ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [ContatoService, AuthService],

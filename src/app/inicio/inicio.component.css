@@ -58,5 +58,11 @@ h4.center {
     color: #717171;
 }
 
+.jumbotron.center {
+    padding-bottom: 2em;
+}
 
+.jumbotron.center img {
+    width: 35px;
+}
  

@@ -8,6 +8,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { BuscarCepComponent } from './projetos/buscar-cep/buscar-cep.component';
 import { NotFoundComponent } from './notFound/not-found.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 const routes: Routes = [
   {path: 'inicio', component: InicioComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'buscar-cep', component: BuscarCepComponent},
   {path: 'sobre', component: SobreComponent},
   {path: 'contato', component: ContatoComponent},
+  {path: 'profile', component: UserProfileComponent },
   {path: '', redirectTo:'inicio', pathMatch: 'full'},  
   {path: '**', component: NotFoundComponent}
 ];

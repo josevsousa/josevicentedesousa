@@ -15,40 +15,56 @@
 
     
   </div> -->
-  <button class="navbar-toggler" id="bt_hamburger" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" routerLink="inicio">José Vicente de Sousa</a>
-  
-    <div class="collapse navbar-collapse"  id="navbarTogglerDemo03">
-      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="inicio">Inicio</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="sobre">Sobre</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="projetos">Projetos</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="contato">Contato</a>
-        </li>
-        <!-- <li class="nav-item">
+  <button class="navbar-toggler" id="bt_hamburger" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" routerLink="inicio">José Vicente de Sousa</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="inicio">Inicio</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="sobre">Sobre</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="projetos">Projetos</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="contato">Contato</a>
+      </li>
+      <!-- <li class="nav-item">
           <a class="nav-link" (click)="openModal(template)">Login {{message}}</a>
         </li> -->
-      </ul>
+    </ul>
 
-      <a class="nav-link login" (click)="openModal(template)">
-        <!-- <i class="material-icons">lock_open</i> -->
+    <app-user-profile></app-user-profile>
+
+    <!-- AUTH -->
+    <!-- <div *ngIf="auth.user | async; then autenticated else guest"></div>
+    <ng-template #quest>
+      ffff
+      <a class="nav-link login">
         <i class="material-icons">lock_outline</i>
-      </a> 
-    </div>
-   
+      </a>
+    </ng-template>
+    <ng-template #autenticated>
+      ddd
+      <a class="nav-link login">
+        <i class="material-icons">face</i>
+      </a>
+    </ng-template> -->
+  
+    <!-- FIM AUTH -->
+  </div>
+
 </nav>
-<ng-template #template>
+<!-- <ng-template #template>
   <div class="modal-body text-center">
     <p>Do you want to confirm?</p>
-    <button type="button" class="btn btn-default" (click)="confirm()" >Yes</button>
-    <button type="button" class="btn btn-primary" (click)="decline()" >No</button>
+    <button type="button" class="btn btn-default" (click)="confirm()">Yes</button>
+    <button type="button" class="btn btn-primary" (click)="decline()">No</button>
   </div>
+</ng-template>  -->
