@@ -6,7 +6,6 @@ export const environment = {
     databaseURL: "https://josevicentedesousa-e1ef1.firebaseio.com",
     projectId: "josevicentedesousa-e1ef1",
     storageBucket: "josevicentedesousa-e1ef1.appspot.com",
-    messagingSenderId: "1016124463338",
-    timestampsInSnapshots: true
+    messagingSenderId: "1016124463338"
   }
 };

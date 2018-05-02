@@ -8,7 +8,7 @@ import { AuthService } from "./services/auth.service";
 
 import { environment } from '../environments/environment';
 import { AngularFireModule } from "angularfire2";
-import { AngularFirestoreModule } from "angularfire2/firestore";
+import { AngularFirestoreModule, AngularFirestore } from "angularfire2/firestore";
 import { AngularFireAuthModule } from "angularfire2/auth";
 
 // bootstrap
@@ -59,4 +59,8 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
   providers: [ContatoService, AuthService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor( private afs: AngularFirestore ) {
+    afs.firestore.settings({timestampsInSnapshots: true});
+  }
+ }
