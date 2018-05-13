@@ -1,4 +1,4 @@
-// import { ServiceWorkerModule } from '@angular/service-worker';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -53,8 +53,8 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
     ButtonsModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    AngularFirestoreModule
-    // ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
+    AngularFirestoreModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [ContatoService, AuthService],
   bootstrap: [AppComponent]
