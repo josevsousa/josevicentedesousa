@@ -1,5 +1,6 @@
-export class formContato {
+export interface Contato {
+    uid: string;
     nome: string;
     email: string;
-    contato: string;
+    message: string;
 }

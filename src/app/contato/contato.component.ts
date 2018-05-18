@@ -28,9 +28,24 @@ export class ContatoComponent implements OnInit {
   }
 
   ngSubmit(){
-    this.contatoService.addContato(this.formulario); //enviando o formContato para o service contato
-    this.enviado = !this.enviado;
-  
+    // modo contato // se precisar observar uma lista 
+    // this.contatoService.addContato(this.formulario)
+    //   .then(()=> {
+    //     this.enviado = !this.enviado;
+    //   })
+    //   .catch((erro)=>{
+    //     console.log("Erro: " + erro);
+    //   }); //enviando o formContato para o service contato
+    
+    // modo contato2 //se for apenar gravar um registro sem necessidade de observar uma lista
+    this.contatoService.addContato2(this.formulario)
+      .then(()=> {
+        this.enviado = !this.enviado;
+      })
+      .catch((erro)=>{
+        console.log("Erro: " + erro);
+    }); //enviando o formContato para o service contato
+    
   }
 
   verificaValorTouched(campo){
