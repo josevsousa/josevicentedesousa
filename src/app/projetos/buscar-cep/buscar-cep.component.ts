@@ -52,6 +52,7 @@ export class BuscarCepComponent implements OnInit {
       this.btConsultar = false;
     }else{
         this.cep.style.color = "red";
+        this.alertErroCep = true;
         this.address_status = false;
         this.btConsultar = true;
     }

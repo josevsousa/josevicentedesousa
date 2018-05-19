@@ -17,7 +17,7 @@ export class UserProfileComponent implements OnInit {
 
   constructor(
     private modalService: BsModalService,
-    private auth: AuthService
+    public auth: AuthService
   ) { }
 
   ngOnInit() {

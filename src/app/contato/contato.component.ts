@@ -48,14 +48,14 @@ export class ContatoComponent implements OnInit {
     
   }
 
-  verificaValorTouched(campo){
+  verificaValorTouchedValid(campo){
     return !this.formulario.get(campo).valid && this.formulario.get(campo).touched;
   }
 
-  aplicaErroCss(inp){
-    return {
-      'has-error': this.verificaValorTouched(inp),
-      'has-feedback': this.verificaValorTouched(inp)
-    }
-  }
+  // aplicaErroCss(campo){
+  //   return {
+  //     'has-error': this.verificaValorTouchedValid(campo),
+  //     'has-feedback': this.verificaValorTouchedValid(campo)
+  //   }
+  // }
 }
