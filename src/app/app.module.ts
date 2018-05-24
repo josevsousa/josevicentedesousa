@@ -15,7 +15,6 @@ import { AngularFireAuthModule } from "angularfire2/auth";
 import { ModalModule } from "ngx-bootstrap/modal";
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { ContatoService } from './services/contato.service';
 
