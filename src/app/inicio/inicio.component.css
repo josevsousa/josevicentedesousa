@@ -5,6 +5,9 @@
 .jumbotron i{
     color: #8a8b8c;
 }
+.jumbotron a{
+    margin-left: 3px;
+}
 
 ul#social {
     padding: inherit;
