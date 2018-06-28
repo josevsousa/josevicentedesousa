@@ -74,4 +74,13 @@ img.python {
 .skill{
     color: #939394;
 }
- 
+.footer{
+    margin-bottom: 0px;
+    padding-top: 22px;
+    margin-top: 27px;
+}
+
+i {
+    font-size: smaller;
+    color: #7d96b5;
+}

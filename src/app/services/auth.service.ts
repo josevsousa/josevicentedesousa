@@ -44,8 +44,12 @@ export class AuthService {
   oAuthLogin(provider){
     return this.afAuth.auth.signInWithPopup(provider)
       .then( (credencial) => {
+        //logado
         this.updateUserData(credencial.user);
       } )
+      .catch((error)=>{
+        console.log(error);
+      })
   }
   // envia ao db
   updateUserData(user){
